@@ -6,28 +6,32 @@
     box-sizing: border-box;
 }
 body{
-    background-color: chartreuse;
+    background-color: teal;
+    
 }
 .navegacion{
     width: 1000px;
-    margin: 30px auto;
+    max-width: 90%;
+    margin: 20px auto;
     background-color: #fff;
+    text-align: initial;
 }
 .navegacion ul{
     list-style: none;
 }
-.menu > li{
+/*menu principal*/
+.tabs > li{
     position: relative;
     display: inline-block;
 }
-.menu >li >a{
+.tabs >li >a{
     display: block;
     padding: 15px 20px;
     color: black;
     font-family: 'Open sans';
     text-decoration: none;
 }
-.menu li a:hover{
+.tabs li a:hover{
     color: chartreuse;
     transition: all .3s;
     /*submenu______*/
@@ -47,7 +51,23 @@ body{
     text-decoration: none;
     color: black;
 }
-.menu li:hover .submenu{
+.tabs li:hover .submenu{
     display: block;
     transition: 0.1.6s;
+}
+.active{
+    background-color: teal;
+}
+.secciones{
+    width: 100%;
+    background-color: #fff;
+    max-width: 90%;
+    margin: 40px auto;
+    
+}
+.secciones article{
+    padding: 50px;
+}
+.secciones article p{
+    text-align: justify;
 }
